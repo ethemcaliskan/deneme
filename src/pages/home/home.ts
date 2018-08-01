@@ -38,7 +38,7 @@ this.options = {
 
   captureAudio(){
 this.geolocation.getCurrentPosition().then((resp) => {
-
+this.data=resp;
 this.data="Okey";
 }).catch((error) => {
   console.log('Error getting location'+error.message);
