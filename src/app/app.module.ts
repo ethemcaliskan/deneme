@@ -8,9 +8,9 @@ import {StreamingMedia} from '@ionic-native/streaming-media';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
-//import { MediaCapture } from '@ionic-native/media-capture';
-//import { Media } from '@ionic-native/media';
-//import { File } from '@ionic-native/file';
+import { MediaCapture } from '@ionic-native/media-capture';
+import { Media } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { IonicStorageModule } from '@ionic/storage';
 //import { QRScanner } from '@ionic-native/qr-scanner';
@@ -37,7 +37,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BarcodeScanner,
-    Geolocation
+    Geolocation,
+    MediaCapture,
+    Media,
+    File
   ]
 })
 export class AppModule {}
